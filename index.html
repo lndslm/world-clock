@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -18,24 +24,33 @@
         <option value="">Mumbai</option>
       </select>
 
-      <h2>Montreal</h2>
-      <div class="date">June 3rd, 2023</div>
-      <div class="time">12:17 PM</div>
-
-      <h2>Milan</h2>
-      <div class="date">June 3rd, 2023</div>
-      <div class="time">12:17 PM</div>
-
-      <h2>Mumbai</h2>
-      <div class="date">June 3rd, 2023</div>
-      <div class="time">12:17 PM</div>
+      <div class="row">
+        <div class="col">
+          <h2>Montreal</h2>
+          <div class="date">June 3rd, 2023</div>
+          <div class="clock">🕒</div>
+          <div class="time">12:17:14 <small>PM</small></div>
+        </div>
+        <div class="col">
+          <h2>Milan</h2>
+          <div class="date">June 3rd, 2023</div>
+          <div class="clock">🕒</div>
+          <div class="time">12:17:14 <small>PM</small></div>
+        </div>
+        <div class="col">
+          <h2>Mumbai</h2>
+          <div class="date">June 3rd, 2023</div>
+          <div class="clock">🕒</div>
+          <div class="time">12:17:14 <small>PM</small></div>
+        </div>
+      </div>
     </div>
 
     <footer>
       <a href="https://github.com/lndslm/world-clock" target="_blank">
         Open-source code
       </a>
-      by Linda Salim
+      by <strong>Linda Salim</strong>
     </footer>
 
     <script src="src/app.js"></script>

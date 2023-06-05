@@ -6,7 +6,7 @@ function updateDateAndTime() {
 
   montrealDateElement.innerHTML = montrealTime.format("MMMM Do, YYYY");
   montrealTimeElement.innerHTML = montrealTime.format(
-    "h:mm:ss [<small>]A[</small>]"
+    "hh:mm:ss [<small>]A[</small>]"
   );
 
   let barcelonaElement = document.querySelector("#barcelona");
@@ -16,7 +16,7 @@ function updateDateAndTime() {
 
   barcelonaDateElement.innerHTML = barcelonaTime.format("MMMM Do, YYYY");
   barcelonaTimeElement.innerHTML = barcelonaTime.format(
-    "h:mm:ss [<small>]A[</small>]"
+    "hh:mm:ss [<small>]A[</small>]"
   );
 
   let adelaideElement = document.querySelector("#adelaide");
@@ -26,7 +26,7 @@ function updateDateAndTime() {
 
   adelaideDateElement.innerHTML = adelaideTime.format("MMMM Do, YYYY");
   adelaideTimeElement.innerHTML = adelaideTime.format(
-    "h:mm:ss [<small>]A[</small>]"
+    "hh:mm:ss [<small>]A[</small>]"
   );
 }
 

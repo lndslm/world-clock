@@ -30,5 +30,31 @@ function updateDateAndTime() {
   );
 }
 
+function showCityDetails(event) {
+  let cityElement = document.querySelector("#city-select");
+  cityElement.classList.add("city");
+
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.split("/")[1];
+  let cityDate = moment().tz(cityTimeZone).format("MMMM Do, YYYY");
+  let cityTime = moment()
+    .tz(cityTimeZone)
+    .format("hh:mm:ss [<small>]A[</small>]");
+
+  cityElement.innerHTML = `
+      <div>
+        <h2>${cityName}</h2>
+        <div class="date">${cityDate}</div>
+      </div>
+      <div class="time">${cityTime}</div>
+    </div>`;
+  setTimeout(() => {
+    showCityDetails(event);
+  }, 1000);
+}
+
+let citySelectElement = document.querySelector("#cities");
+citySelectElement.addEventListener("change", showCityDetails);
+
 updateDateAndTime();
 setInterval(updateDateAndTime, 1000);

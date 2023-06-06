@@ -9,6 +9,7 @@ h1 {
 h2 {
   margin: 0;
   font-size: 30px;
+  text-align: left;
 }
 
 select {
@@ -62,4 +63,8 @@ footer a {
 
 .city:last-child {
   border-bottom: none;
+}
+
+#city-select {
+  color: #1a64d6;
 }

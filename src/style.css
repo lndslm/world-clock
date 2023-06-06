@@ -53,10 +53,6 @@ footer a {
   vertical-align: middle;
 }
 
-.col:last-child {
-  border-right: none;
-}
-
 .city {
   display: flex;
   justify-content: space-between;
